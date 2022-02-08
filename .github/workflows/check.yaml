@@ -8,5 +8,5 @@ jobs:
         with:
           fetch-depth: 1
       - uses: azure/container-scan@v0
-  with:
-    image-name: kong/kong-gateway:2.5.0.0-alpine
+        with:
+        image-name: kong/kong-gateway:2.5.0.0-alpine
