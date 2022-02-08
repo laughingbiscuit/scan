@@ -1,0 +1,12 @@
+name: Vuln scan
+on: [push]
+jobs:
+  Scan-Image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
+      - uses: azure/container-scan@v0
+  with:
+    image-name: kong/kong-gateway:2.5.0.0-alpine
